@@ -861,6 +861,7 @@ public final class CorreoProto {
        * <code>string contenido = 4;</code>
        * @return The contenido.
        */
+      @Override
       public java.lang.String getContenido() {
         java.lang.Object ref = contenido_;
         if (!(ref instanceof java.lang.String)) {

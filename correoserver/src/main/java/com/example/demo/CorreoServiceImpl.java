@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import io.grpc.stub.StreamObserver;
+import mx.emite.sdk.proxy.request.CorreoRequest;
 
 public class CorreoServiceImpl extends CorreoServiceGrpc.CorreoServiceImplBase {
 
