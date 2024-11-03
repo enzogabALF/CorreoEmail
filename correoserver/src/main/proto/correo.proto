@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_package = "com.example.demo";
+option java_outer_classname = "CorreoProto";
+
+service CorreoService {
+    rpc EnviarCorreo (CorreoRequest) returns (CorreoResponse){}
+    rpc RecibirCorreo (CorreoRequest) returns (CorreoResponse){}
+}
+
+message CorreoRequest {
+    string destinatario = 1;
+    string remitente = 2;
+    string asunto = 3;
+    string contenido = 4;
+}
+
+message CorreoResponse {
+    bool success = 1;
+    string message = 2;
+}
